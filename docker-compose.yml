@@ -1,0 +1,11 @@
+version: '3'
+services:
+  web:
+    build: './web'
+    volumes:
+      - ./web:/app
+    command: bash -c "cp -R /dependencies/node_modules /app && npm start"
+    working_dir: /app
+    ports: 
+      - 3000:3000
+      - 35729:35729
