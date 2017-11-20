@@ -7,4 +7,8 @@ const Login = () => (
     </div>
 );
 
+const SetLogged = () => {
+    
+}
+
 export default Login;

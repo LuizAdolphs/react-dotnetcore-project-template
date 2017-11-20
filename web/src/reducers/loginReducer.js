@@ -1,3 +1,5 @@
+export const LOGGED = 'login/LOGGED';
+
 const initialState = {
     isLogged: false
 };

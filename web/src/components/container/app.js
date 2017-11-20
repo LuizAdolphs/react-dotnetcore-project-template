@@ -17,7 +17,7 @@ class App extends React.Component {
 
     componentDidMount() {    
         if(!this.props.isLogged) {
-            this.props.toLogin();
+            this.props.redirectToLogin();
         }
     }
 
@@ -38,7 +38,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => bindActionCreators({
-    toLogin: () => push('/login')
+    redirectToLogin: () => push('/login')
 }, dispatch);
 
 export default connect(
